@@ -83,8 +83,8 @@ class Left extends Component {
               <p>在线人数: {<b className="onlineCount">{onlineCount}</b>} 人</p>
               <div>
                 <ul className="chat-content">
-                  <li className="onlineUser">{user + "上线了"}</li>
-                  <li className="quitUser">{user + "上线了"}</li>
+                  <li className="onlineUser"><span>{user + "上线了"}</span></li>
+                  <li className="quitUser"><span>{user + "上线了"}</span></li>
                 </ul>
               </div>
               <div>

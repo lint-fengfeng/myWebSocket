@@ -4,7 +4,27 @@
   align-items: center;
   justify-content: space-around;
 }
+
 .onlineCount {
   color: red;
   font-size: 18px;
+}
+
+.chat-content {
+  padding: 0;
+  text-align: center;
+}
+
+.chat-content li {
+  height: 18px;
+  list-style: none;
+}
+
+.onlineUser span, .quitUser span {
+  display: inline-block;
+  line-height: 18px;
+  padding: 0 10px;
+  background-color: rgba(0, 0, 0, .3);
+  color: #fff;
+  font-size: 12px;;
 }

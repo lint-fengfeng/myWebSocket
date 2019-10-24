@@ -14,7 +14,7 @@ router.all("/xuefeng/:id", (ctx) => {
   ctx.websocket.on('message', function(msg) {
     // do something with the message from client
     let message = JSON.parse(msg)
-    if (message.type === "enter" && userAuthority.indexOf(author.id)) {
+    if (message.type === "enter") {
       var author = {
         name: message.name,
         id: uuid.v4(),
