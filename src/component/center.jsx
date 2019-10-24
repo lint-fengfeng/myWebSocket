@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import "@/scss/right.css"
+import React, { Component } from 'react'
+import "@/scss/center.css"
 
-class Right extends Component {
+class Center extends Component {
   constructor(props) {
     super(props)
     this.setBind()
@@ -20,6 +20,7 @@ class Right extends Component {
     this.enter = this.enter.bind(this);
     this.out = this.out.bind(this);
     this.onChange = this.onChange.bind(this);
+    this.listener = this.listener.bind(this)
   }
   
   onChange(e) {
@@ -36,7 +37,7 @@ class Right extends Component {
   enter() {
     this.socket = new WebSocket("ws://localhost:3005/xuefeng/1");
     this.socket.onopen = () => {
-      const user = JSON.stringify({name: 'right', type: "enter"})
+      const user = JSON.stringify({name: 'center', type: "enter"})
       this.socket.send(user)
     }
     this.listener(this.socket)
@@ -70,7 +71,7 @@ class Right extends Component {
   render() {
     const {onlineCount, iptVal, isShow, user} = this.state
     return (
-      <div className="right">
+      <div className="center">
         <div>WebSocket Chat Demo</div>
         {
           isShow ?
@@ -99,4 +100,4 @@ class Right extends Component {
   }
 }
 
-export default Right
+export default Center;

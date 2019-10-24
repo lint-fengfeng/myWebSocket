@@ -1,10 +1,10 @@
-.right {
+.center {
   width: 300px;
   height: 500px;
   border: 1px solid #ccc;
   text-align: center;
 }
-.right .chat-content {
+.center .chat-content {
   margin: 0 auto;
   width: 200px;
   height: 370px;

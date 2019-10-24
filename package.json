@@ -6,6 +6,7 @@
     "koa": "^2.8.2",
     "koa-router": "^7.4.0",
     "koa-websocket": "^6.0.0",
+    "nodemon": "^1.19.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router": "^5.1.2",
@@ -46,6 +47,7 @@
     "http-proxy-middleware": "0.17.3",
     "jest": "18.1.0",
     "json-loader": "0.5.4",
+    "node-uuid": "^1.4.8",
     "object-assign": "4.1.1",
     "postcss-loader": "1.2.2",
     "promise": "7.1.1",
@@ -60,7 +62,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "server": "node ./src/server/app.js",
+    "server": "nodemon ./src/server/app.js",
     "test": "node scripts/test.js --env=jsdom"
   },
   "jest": {
